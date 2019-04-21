@@ -14,7 +14,9 @@ The question being asked is to what extent can player points per game be predict
 - interaction between player age and what year in career 
 
 
-The hypothesis is that a player's points per games can be predicted using the above predictors. 
+The hypothesis is that a player's points per games can be predicted using the above predictors. These were chosen because they had some correlation with player points per game. The predictors, height and weight correlated with each other, so they were made into one interaction by multiplying them. The same was done for age and career year. This can be seen when looking at a heatmap, to see which variables are correlated. 
+
+![observation](https://github.com/AR3441/Linear-Regression/blob/master/observations/heatmap.png)
 
 ## Tools: 
 
@@ -32,7 +34,9 @@ This linear model had an R Squared value of 0.787 meaning that the model account
 Next, the OLS function was used to predict PPG using all the predictors to see if the model can be improved and to see the effect of these other predictors. The following results occurred: 
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ppg_all_predictors.PNG)
 
-The R-squared value improved to 79.8% However, this means the other predictors only accounted for 1.1% of variability. 
+The R-squared value improved to 79.8% However, this means the other predictors only accounted for 1.1% of variability which can also be seen when examining the coefficients for those predictors. 
+
+
 
 
 
