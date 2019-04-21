@@ -22,4 +22,4 @@ The hypothesis was tested using Jupyter Notebook and libraries such as pandas, m
 
 The first linear regression that was made looked at the relationship between player PPG and MPG. Using statsmodels and the ordinary least squares function, the following results occured: 
 
-![Graphs](https://github.com/codekorn/mod_1_movies/blob/master/graphs/World%20Wide%20Gross%20vs%20Metascore.png)
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/basic_ppgmpg.PNG)
