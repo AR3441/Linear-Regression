@@ -29,7 +29,7 @@ The first linear regression that was made looked at the relationship between pla
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/basic_ppgmpg.PNG)
 
 This linear model had an R Squared value of 0.787 meaning that the model accounted for 78.7% of the variability. The coefficient for MPG is 0.54 meaning as minutes per games increase the points per game increases by 0.54. The following scatterplot shows this relationship.
-![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ppgvsmpg_basic.png)
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/basicmodelvsdata.png)
 
 Next, the OLS function was used to predict PPG using all the predictors to see if the model can be improved and to see the effect of these other predictors. The following results occurred: 
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ppg_all_predictors.PNG)
@@ -46,6 +46,16 @@ The distribution of PPG is very skewed and most of the player's in this data set
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ols_morethan10ppg.PNG)
 
 The R squared value decreased a lot and know only accounts for 51.9% of the variability. The coefficient for MPG increased as well as the coefficients for 'HeightxWeight' and 'agexcareer'. However, it seems that MPG is still the biggest predictor.  
+
+## Conclusion
+
+The graph below, shows the original model with only MPG as a predictor with cut offs at 10 PPG and 20 PPG. 
+
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/cutoff20.png)
+
+It is very easy to see here and the residual plot from before, that the model doesn't do as well when predicting as MPG increased. The model accounted for 79.8% of the variability but this decreased to 51.9% when looking at players that scored over 10 PPG. However, this is 2856 out of the 8045 players that were originally in the set. Looking at the original set, it can be said that player MPG is a good predictor of player PPG since most players do score less than 10 PPG. However, improvements need to be made to the predictive model to account for player's that are scoring more. This can be done by finding other predictors that better correlate to player PPG or by using a polynomial regression. 
+
+
 
 
 
