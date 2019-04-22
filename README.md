@@ -34,7 +34,11 @@ This linear model had an R Squared value of 0.787 meaning that the model account
 Next, the OLS function was used to predict PPG using all the predictors to see if the model can be improved and to see the effect of these other predictors. The following results occurred: 
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ppg_all_predictors.PNG)
 
-The R-squared value improved to 79.8% However, this means the other predictors only accounted for 1.1% of variability which can also be seen when examining the coefficients for those predictors. 
+The R-squared value improved to 79.8% However, this means the other predictors only accounted for 1.1% of variability which can also be seen when examining the coefficients for those predictors. The coefficient for MPG is about the same while the coefficient for the other predictors are very low. The coefficients 'PG', 'SG', 'SF', and 'PF' are also dummy variables are inrelation to the variable 'C' which is dropped.  One thing that did change was the y-intercept. But overall, a player's MPG seems to be the biggest predictor of a player's PPG. This isn't surprising given the heatmap seen earlier, but to better understand the accuracy of the model, a residual plot is done. 
+
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/residualsplot.png)
+
+
 
 
 
