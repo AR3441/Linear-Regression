@@ -22,7 +22,7 @@ The hypothesis is that a player's points per games can be predicted using the ab
 
 The hypothesis was tested using Jupyter Notebook and libraries such as pandas, matplotlib, numpy, seaborn, and statsmodels.
 
-##Testing: 
+##Testing/Analysis: 
 
 The first linear regression that was made looked at the relationship between player PPG and only MPG. Using statsmodels and the ordinary least squares(OLS) function, the following results occurred: 
 
@@ -37,6 +37,16 @@ Next, the OLS function was used to predict PPG using all the predictors to see i
 The R-squared value improved to 79.8% However, this means the other predictors only accounted for 1.1% of variability which can also be seen when examining the coefficients for those predictors. The coefficient for MPG is about the same while the coefficient for the other predictors are very low. The coefficients 'PG', 'SG', 'SF', and 'PF' are also dummy variables are inrelation to the variable 'C' which is dropped.  One thing that did change was the y-intercept. But overall, a player's MPG seems to be the biggest predictor of a player's PPG. This isn't surprising given the heatmap seen earlier, but to better understand the accuracy of the model, a residual plot is done. 
 
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/residualsplot.png)
+Looking at this graph, the residuals are not randomly distributed meaning the model is better in some areas than in other areas. In this situation, the residuals increase as the predicted PPG increases. To better understand why this may be happenning, the distribution of player PPG was looked at. 
+
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ppg_distribution.png)
+
+The distribution of PPG is very skewed and most of the player's in this data set have scored around 5 points per game. I wanted to see how the model would change when looking at data for player's that only scored more than 10 points per game. It should also be noted that players that score more than 10 points per game account for 2856 players out of our 8045 players.The following results were occcured:
+
+![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/ols_morethan10ppg.PNG)
+
+The R squared value decreased a lot and know only accounts for 51.9% of the variability. The coefficient for MPG increased as well as the coefficients for 'HeightxWeight' and 'agexcareer'. However, it seems that MPG is still the biggest predictor.  
+
 
 
 
