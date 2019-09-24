@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-  In this project, the relationship between player points per game, minutes per game and other player statistics was evaluated. The data used in this project contained season totals in points, minutes, games played, team pace as well as other data about the player's position, age, height and weight from the 1996-1997 season to the 2016-2017 season. The raw data was retrieved from datasets on Kaggle and from the NBA website. The data after being cleaned contained 8045 players.
+  In this project, the relationship between player points per game, minutes per game and other player statistics was evaluated. The data used in this project contained season totals in points, minutes, games played, team pace as well as other data about the player's position, age, height and weight from the 1996-1997 season to the 2016-2017 season. The raw data was retrieved from datasets on Kaggle and from the NBA website. The data after being cleaned contained information on 8045 players.
   
 ## Hypothesis:
 
@@ -53,10 +53,11 @@ The graph below, shows the original model with only MPG as a predictor with cut 
 
 ![observations](https://github.com/AR3441/Linear-Regression/blob/master/observations/cutoff20.png)
 
-It is very easy to see here and the residual plot from before, that the model doesn't do as well when predicting as MPG increased. The model accounted for 79.8% of the variability but this decreased to 51.9% when looking at players that scored over 10 PPG. However, this is 2856 out of the 8045 players that were originally in the set. Looking at the original set, it can be said that player MPG is a good predictor of player PPG since most players do score less than 10 PPG. However, improvements need to be made to the predictive model to account for player's that are scoring more. This can be done by finding other predictors that better correlate to player PPG or by using a polynomial regression. 
+It is very easy to see here and the residual plot from before, that the model doesn't do as well when predicting as MPG increased. The model accounted for 79.8% of the variability but this decreased to 51.9% when looking at players that scored over 10 PPG. However, this is 2856 out of the 8045 players that were originally in the set. Looking at the original set, it can be said that player MPG is a good predictor of player PPG since most players do score less than 10 PPG. 
 
+## Future Steps 
 
-
+This project can be improved by increasing features. Some features that come to mind that would be helpful are body fat percentage. This will give us a better idea of the shape the players are in than the 'height x weight' feature. The predictive model might also be improved upon by using polynomial regression since the model becomes less accurate for players that are scoring more, and that behavior isn't really predictiable. 
 
 
 
